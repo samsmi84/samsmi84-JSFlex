@@ -13,14 +13,19 @@
             <p>${panels.text_buttom}</p>
           </div>
         `
-      })
+      }).join("")
   
       document.querySelector('#panel_container').innerHTML = panels
     })
 
     const panel = document.querySelectorAll('.panel');
-    panel.forEach(panel => panel.addEventListener('click', toggleOpen));
-    panel.forEach(panel => panel.addEventListener('transitionend', toggleActive));
+    console.log(panel)
+
+
+
+
+    //panel.forEach(panel => panel.addEventListener('click', toggleOpen));
+    //panel.forEach(panel => panel.addEventListener('transitionend', toggleActive));
 
   }
     function toggleOpen() {
